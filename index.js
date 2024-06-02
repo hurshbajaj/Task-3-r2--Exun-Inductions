@@ -38,12 +38,26 @@ submitBtn.onclick = function(){
     
 
 
-    if(name_input.value != "" && mail_input.value.includes("@") && extra_input.value != ""){
+    if(name_input.value != "" && mail_input.value.includes("@") && extra_input.value != "" && grade_input.value != "" && Achievements_input.value != "" && DoB_input.value != "" && (radio.checked || radio2.checked)){
+        alert("Congrats on filling the form! You will be informed of the following steps shortly... Details are as follows,");
+
         alert(`Name: ` + name_input.value);
         alert(`Mail: `+mail_input.value);
         alert(`Message: `+extra_input.value);
+        alert(`Achievements: `+Achievements_input.value);
+        alert(`Grade: `+grade_input.value);
+        alert(`DoB: `+DoB_input.value);
+        if(radio.checked){
+            alert(`Notifications: On`);
+        }
+        else if (radio2.checked) {
+            alert(`Notifications: Off`);
+        } 
+
+        submitBtn.href="index.html";
     }
 }
+
 grade_input.onchange = function(){
     if(grade_input.value < 1){
         grade_input.value = 12;
