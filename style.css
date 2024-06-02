@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(167, 42, 205);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.user{
+    font-size: 120px;
+    background-color: rgb(198, 111, 224);
+    border-radius: 50%;
+    padding: 40px;
+    color: rgb(78, 46, 88);
+}
+.heading{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(64, 38, 71);
+}
+section{
+    margin-top: 60px;
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    background-color: rgba(226, 162, 245, 0.174);
+    height: 28px;
+    width: 100%;
+    max-width: 600px;
+    transition: 300ms;
+    padding-left: 10px;
+}
+input::placeholder{
+    color: rgba(94, 52, 107, 0.416);
+    font-size: 14px;
+    text-align: center;
+}
+input:hover{
+    background: rgba(233, 172, 252, 0.297);
+   
+}
+input:focus{
+    outline: none;
+    background: rgba(233, 172, 252, 0.502);
+}
+.opt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+label{
+    margin-top: 10px;
+    color:rgb(92, 24, 112);
+}
+.submit{
+    margin-top: 25px;
+    font-size: 15px;
+    padding: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 8px;
+    border: none;
+    color: rgba(78, 23, 95, 0.47);
+    background-color: rgba(226, 162, 245, 0.174);
+    transition: background-color 200ms ease;
+}
+.submit:hover{
+    background: rgba(233, 172, 252, 0.297);
+}
